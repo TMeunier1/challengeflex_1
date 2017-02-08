@@ -1,8 +1,10 @@
-body{
+body {
     width: 1020px;
     margin: 0 auto;
     background-image: url(../images/bg.jpg);
-    height: 1010px;
+    color: #7a7a7a;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 header {
     text-align: center;
@@ -38,24 +40,55 @@ h2 {
     background-color: #e8e8e8;
     height: 60px;
     margin: 0;
+    align-items: center;
 }
 li {
     margin: 0.5em;
 
 }
-main{
+main {
     background-color: white;
+    margin: 0 auto;
+    width: 1020px;
 
 }
-main p:first-child {
-    margin:
+
+#paragraphe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 90px;
     width: 900px;
     margin: 0 auto;
+    padding: 2em 0;
 }
-section {
+
+#article {
     display: flex;
+    justify-content: space-around;
+    height: 675px;
 }
+
 article {
-    
+    width: 260px;
 }
+
+h3 {
+    color: black;
+    text-transform: uppercase;
+}
+
+@media(max-width:460px) {
+
+    body {
+        width: 100%;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+    }
+    }
