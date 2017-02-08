@@ -14,6 +14,7 @@ ul {
     display: flex;
     list-style: none;
     justify-content: center;
+    padding: 0;
 
 }
 
@@ -22,13 +23,14 @@ nav li {
     color: white;
     text-transform: uppercase;
 
+
 }
 .selected {
     color:#cfa205;
 }
 h1 {
     text-transform: uppercase;
-    font-size: 133px;
+    font-size: 10vw;
     color: #cfa205;
 }
 h2 {
@@ -57,8 +59,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90px;
-    width: 900px;
     margin: 0 auto;
     padding: 2em 0;
 }
@@ -66,13 +66,11 @@ main {
 #article {
     display: flex;
     justify-content: space-around;
-    height: 675px;
-}
 
-article {
-    width: 260px;
 }
-
+#article article {
+    margin: 0 2em;
+}
 h3 {
     color: black;
     text-transform: uppercase;
@@ -84,11 +82,16 @@ h3 {
         width: 100%;
     }
 
-    ul {
+    nav ul {
         flex-direction: column;
+
     }
 
     main {
         width: 100%;
     }
+
+    #article {
+        flex-direction: column;
     }
+}
